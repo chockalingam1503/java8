@@ -1,4 +1,5 @@
-package com.training.comparatorAnanymousInnerTradtional.java8;
+
+package com.training.methodreference;
 
 public class Student {
 
@@ -19,7 +20,7 @@ public class Student {
 	// To print student details in main()
 	public String toString() {
 
-		// Returning attributes of Student
+		System.out.println(this.rollno + " " + this.name + " " + this.address);
 		return this.rollno + " " + this.name + " " + this.address;
 	}
 
@@ -46,4 +47,7 @@ public class Student {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
+	
+
 }

@@ -2,7 +2,7 @@ package com.training.functions;
 
 import java.util.function.Function;
 
-public class Functins {
+public class Functions {
 
 	   
 	public static void main(String[] args) {
@@ -12,7 +12,6 @@ public class Functins {
 
 		@Override
 		public String apply(String t) {
-			// TODO Auto-generated method stub
 			return t+" i am apply";
 		}
 	

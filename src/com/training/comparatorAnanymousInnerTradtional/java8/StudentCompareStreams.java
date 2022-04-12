@@ -1,6 +1,7 @@
 package com.training.comparatorAnanymousInnerTradtional.java8;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,6 +33,11 @@ public static void main(String[] args) {
     List<Student> sortedList1 = ar.stream().sorted( ( o1,  o2)-> o1.name.compareTo(o2.name) ).collect(Collectors.toList());
     System.out.println(sortedList1);
     
+    System.out.println("sorted by Compaartor comapring");
+    	ar.stream().sorted(Comparator.comparing(s->s.getName())).forEach(s->System.out.println(s));
+    	
+    	 System.out.println("sorted by Compaartor comapring with method reference");	
+    	ar.stream().sorted(Comparator.comparing(Student::getRollno)).forEach(System.out::println);
 }
 	
 	

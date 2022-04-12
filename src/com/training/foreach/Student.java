@@ -1,4 +1,5 @@
-package com.training.comparatorAnanymousInnerTradtional.java8;
+
+package com.training.foreach;
 
 public class Student {
 
@@ -46,4 +47,7 @@ public class Student {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
+	
+
 }
